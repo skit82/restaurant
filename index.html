@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css"/>
+  <link rel="stylesheet" href="css/slick-theme.css"/>
 	<title>	</title>
 </head>
 <body>
@@ -44,7 +46,7 @@
 			<p class="page-header__text">
 				При заказе доставки от 3х блюд
 			</p>
-			<a href="" class="page-header__link">
+			<a href="basket.html" class="page-header__link">
 				Смотреть меню
 			</a>
 		</div>
@@ -58,42 +60,83 @@
 				<p class="catalog__text">
 					Все самое лучшее для вас
 				</p>
-				<article>
-					
-				</article>
 					<ul class="catalog__list">
 						<li class="catalog__item flashcard flashcard--color">
-							
+							<div class="flashcard__descr">
+								<span class="flashcard__descr-hot">
+									Горячая акция
+								</span>
+								<h3 class="flashcard__descr-name">
+									Роял-кебаб от шеф-повара нашего ресторана в подарок!
+								</h3>
+								<p class="flashcard__descr-text">
+									При заказе доставки от трех блюд.
+								</p>
+								<a href="" class="flashcard__descr-link">
+									Подробнее
+								</a>
+							</div>
+							<img src="image/hot-foto.png" width="246" height="255" alt="" class="flashcard__descr-img">
 						</li>
-						<li class="flashcard">
+						<li class="flashcard flashcard-picture">
 							<img src="image/snack.jpg" width="272" height="308" alt="" class="flashcard__img">
+							<h3 class="flashcard__text">
+								Закуски Мезе
+							</h3>
 						</li>
-						<li class="flashcard">
+						<li class="flashcard flashcard-picture">
 							<img src="image/salad.jpg" width="272" height="308" alt="" class="flashcard__img">
+							<h3 class="flashcard__text">
+								Салаты
+							</h3>
 						</li>
-						<li class="flashcard">
+						<li class="flashcard flashcard-picture">
 							<img src="image/soup.jpg" width="272" height="308" alt="" class="flashcard__img">
+							<h3 class="flashcard__text">
+								Супы	
+							</h3>
 						</li>
-						<li class="flashcard">
+						<li class="flashcard flashcard-picture">
 							<img src="image/burger.jpg" width="272" height="308" alt="" class="flashcard__img">
+							<h3 class="flashcard__text">
+								Бургеры	
+							</h3>
 						</li>
-						<li class="flashcard">
+						<li class="flashcard flashcard-picture">
 							<img src="image/toasts.jpg" width="272" height="308" alt="" class="flashcard__img">
+							<h3 class="flashcard__text">
+								Тосты	
+							</h3>
 						</li>
-						<li class="flashcard">
+						<li class="flashcard flashcard-picture">
 							<img src="image/doner.jpg" width="272" height="308" alt="" class="flashcard__img">
+							<h3 class="flashcard__text">
+								Донеры	
+							</h3>
 						</li>
-						<li class="flashcard">
+						<li class="flashcard flashcard-picture">
 							<img src="image/plate.jpg" width="272" height="308" alt="" class="flashcard__img">
+							<h3 class="flashcard__text">
+								На тарелке	
+							</h3>
 						</li>
-						<li class="flashcard">
+						<li class="flashcard flashcard-picture">
 							<img src="image/sauces.jpg" width="272" height="308" alt="" class="flashcard__img">
+							<h3 class="flashcard__text">
+								Соусы	
+							</h3>
 						</li>
-						<li class="flashcard">
+						<li class="flashcard flashcard-picture">
 							<img src="image/drinks.jpg" width="272" height="308" alt="" class="flashcard__img">
+							<h3 class="flashcard__text">
+								Напитки	
+							</h3>
 						</li>
-						<li class="flashcard">
+						<li class="flashcard flashcard-picture">
 							<img src="image/desserts.jpg" width="272" height="308" alt="" class="flashcard__img">
+							<h3 class="flashcard__text">
+								Десерты	
+							</h3>
 						</li>
 					</ul>
 			</div>
@@ -142,6 +185,61 @@
 				</div>
 			</div>
 		</section>
+		<section class="feedback">
+			<h2 class="feedback__title">
+				Отзывы гостей
+			</h2>
+			<p class="feedback__text">
+				Для нас самое главное это честность
+			</p>
+			<div class="feedback__slider">
+				<blockquote class="feedback__item">
+					<div class="feedback__wrraper">
+						<div class="feedback__picture">
+							<img src="image/icon-feedback1.png" width="114" height="114" alt="Фото" class="feedback__img">
+						</div>
+						<div class="feedback__inner">
+							<b class="feedback__name">
+								Марк Поперечный
+							</b>
+							<p class="feedback__topic">
+								Заказали каре ягнёнка, там как раз на 4 персоны, овощи на гриле, салаты названия не помню, но девушкам понравились, я даже пожалел, что уже наелся, придётся салат в другой раз заказывать. Всего много, сытно, давно я так вкусно не ел. Желаю ресторану развития и побольше ценителей качественного мяса!	
+							</p>
+						</div>
+					</div>
+				</blockquote>
+				<blockquote class="feedback__item">
+					<div class="feedback__wrraper">
+						<div class="feedback__picture">
+							<img src="image/icon-feedback1.png" width="114" height="114" alt="Фото" class="feedback__img">
+						</div>
+						<div class="feedback__inner">
+							<b class="feedback__name">
+								Марк Поперечный
+							</b>
+							<p class="feedback__topic">
+								Заказали каре ягнёнка, там как раз на 4 персоны, овощи на гриле, салаты названия не помню, но девушкам понравились, я даже пожалел, что уже наелся, придётся салат в другой раз заказывать. Всего много, сытно, давно я так вкусно не ел. Желаю ресторану развития и побольше ценителей качественного мяса!	
+							</p>
+						</div>
+					</div>
+				</blockquote>
+				<blockquote class="feedback__item">
+					<div class="feedback__wrraper">
+						<div class="feedback__picture">
+							<img src="image/icon-feedback1.png" width="114" height="114" alt="Фото" class="feedback__img">
+						</div>
+						<div class="feedback__inner">
+							<b class="feedback__name">
+								Марк Поперечный
+							</b>
+							<p class="feedback__topic">
+								Заказали каре ягнёнка, там как раз на 4 персоны, овощи на гриле, салаты названия не помню, но девушкам понравились, я даже пожалел, что уже наелся, придётся салат в другой раз заказывать. Всего много, сытно, давно я так вкусно не ел. Желаю ресторану развития и побольше ценителей качественного мяса!	
+							</p>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+		</section>
 	</main>
 	<footer class="page-footer">
 		<div class="page-footer__wrapper">
@@ -173,36 +271,56 @@
 				</ul>
 				<ul class="page-footer__info">
 					<li class="page-footer__info-item">
-						<p>Закуски Мезе</p>
+						<a href="" class="page-footer__info-link">
+							<p>Закуски Мезе</p>
+						</a>
 					</li>
 					<li class="page-footer__info-item">
-						<p>Салаты</p>
+						<a href="" class="page-footer__info-link">
+							<p>Салаты</p>
+						</a>
 					</li>
 					<li class="page-footer__info-item">
-						<p>Супы</p>
+						<a href="" class="page-footer__info-link">
+							<p>Супы</p>
+						</a>
 					</li>
 					<li class="page-footer__info-item">
-						<p>Бургеры</p>	
+						<a href="" class="page-footer__info-link">
+							<p>Бургеры</p>
+						</a>	
 					</li>
 					<li class="page-footer__info-item">
-						<p>Тосты</p>
+						<a href="" class="page-footer__info-link">
+							<p>Тосты</p>
+						</a>
 					</li>
 				</ul>
 				<ul class="page-footer__info">
 					<li class="page-footer__info-item">
-						<p>Донеры</p>
+						<a href="" class="page-footer__info-link">
+							<p>Донеры</p>
+						</a>
 					</li>
 					<li class="page-footer__info-item">
-						<p>На тарелке</p>	
+						<a href="" class="page-footer__info-link">
+							<p>На тарелке</p>
+						</a>	
 					</li>
 					<li class="page-footer__info-item">
-						<p>Соусы</p>	
+						<a href="" class="page-footer__info-link">
+							<p>Соусы</p>
+						</a>	
 					</li>
 					<li class="page-footer__info-item">
-						<p>Напитки</p>	
+						<a href="" class="page-footer__info-link">
+							<p>Напитки</p>
+						</a>	
 					</li>
 					<li class="page-footer__info-item">
-						<p>Десерты</p>	
+						<a href="" class="page-footer__info-link">
+							<p>Десерты</p>
+						</a>	
 					</li>
 				</ul>
 			</div>
@@ -250,5 +368,8 @@
 			</p>
 		</div>
 	</footer>
+	<script  src="jquery/jquery-3.0.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
