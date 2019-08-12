@@ -1,12 +1,26 @@
 $(document).ready(function() {
 
-    $('.page-header__mob-open').on('click', function() {
-        $('.user').slideToggle(100, function(){
+    $('.header-menu-mob__item--humburger').on('click', function() {
+        $('.main-menu__list').slideToggle(100, function(){
           if($(this).css('display') === 'none'){
           $(this).removeAttr('style')
           };
       });
     })
+
+    var $menu = $('#menu');
+    $(window).scroll(function(){
+      if ( $(this).scrollTop() > -400 && $menu.hasClass('normal') ) {
+      $menu.removeClass('normal').addClass('fix');
+      }
+      else if($(this).scrollTop() <= -400 && $menu.hasClass('fix')) {
+      $menu.removeClass('fix').addClass('normal');
+      }
+    });
+
+    $(function(){
+      $('.clikblock').click(function(){$('html,body').animate({scrollTop:$('.stopblock').offset().top}, 1200);});
+    });
 
   $('.feedback__slider').slick({
     dots: false,
@@ -18,10 +32,10 @@ $(document).ready(function() {
     slidesToScroll: 1,
     responsive: [
     {
-        breakpoint: 1200,
+        breakpoint: 1600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 0.5,
+          slidesToScroll: 0.5,
           infinite: true,
           dots: false
         }
@@ -29,9 +43,9 @@ $(document).ready(function() {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1.5,
           adaptiveHeight: true,
-          slidesToScroll: 2
+          slidesToScroll: 1.5
         }
       },
       {
