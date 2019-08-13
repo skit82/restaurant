@@ -24,18 +24,21 @@ $(document).ready(function() {
 
   $('.feedback__slider').slick({
     dots: false,
+    centerMode: "true",
     infinite: true,
     speed: 300,
-    prevArrow: '<img class="left" src="img/left.png">',
-    nextArrow: '<img class="right" src="img/right.png">',
+    prevArrow: '<img class="left" src="image/icon-left.png">',
+    nextArrow: '<img class="right" src="image/icon-right.png">',
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
     {
-        breakpoint: 1600,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 0.5,
-          slidesToScroll: 0.5,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
           infinite: true,
           dots: false
         }
@@ -43,14 +46,17 @@ $(document).ready(function() {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 1.5,
+          infinite: true,
+          slidesToShow: 1,
           adaptiveHeight: true,
-          slidesToScroll: 1.5
+          centerMode: true,
+          slidesToScroll: 1
         }
       },
       {
         breakpoint: 520,
         settings: {
+          infinite: true,
           slidesToShow: 1,
           adaptiveHeight: true,
           slidesToScroll: 1
