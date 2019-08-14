@@ -90,7 +90,7 @@ body {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
-  padding: 0px;
+  padding: 0px 35px;
   margin: 0px auto;
   list-style: none;
 }
@@ -103,6 +103,9 @@ body {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+}
+.main-menu__link--color {
+  color: #fcbe87;
 }
 .catalog {
   min-height: 1320px;
@@ -274,11 +277,22 @@ body {
 .flashcard__ref {
   text-decoration: none;
 }
+.main__contact-text {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
 @media (min-width: 767px) {
   .main-menu__list {
     display: flex;
+    padding: 0px;
   }
   .header-menu-mob__link {
+    opacity: 0;
+  }
+  .main-menu__item--contact {
     display: none;
   }
   .flashcard--color {
@@ -372,7 +386,7 @@ body {
   padding-bottom: 110px;
 }
 .page-header__title {
-  padding-top: 55px;
+  padding-top: 90px;
   padding-bottom: 30px;
   margin: 0px;
   font-size: 35px;
@@ -592,7 +606,7 @@ body {
   position: relative;
 }
 .page-header__basket-link {
-  width: 110px;
+  width: 100px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -606,7 +620,7 @@ body {
 .page-header__basket-text {
   padding: 0px;
   margin: 0px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   color: #fff;
   text-decoration: none;
@@ -630,6 +644,24 @@ body {
   .page-header__basket {
     position: absolute;
     right: 25px;
+  }
+  .header-menu-mob__link {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    cursor: pointer;
+  }
+  .header-menu-mob__text {
+    padding: 0px;
+    padding-left: 5px;
+    margin: 0px;
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
   }
 @media (min-width: 767px) {
   .page-header__basket-number {
@@ -1068,7 +1100,7 @@ body {
     max-width: 768px;
   }
   .feedback {
-    width: 1600px;
+    max-width: 1600px;
     min-height: 789px;
     margin: 0 auto;
     background-position: center 0px;
@@ -1542,6 +1574,7 @@ body {
   width: 100%;
   background-color: #fff;
   margin-bottom: 20px;
+  border-radius: 0px 0px 10px 10px;
 }
 .card__list {
   padding: 0px;
@@ -1558,6 +1591,7 @@ body {
 .card__img {
   display: block;
   margin-bottom: 20px;
+  border-radius: 10px 10px 0px 0px;
 }
 .card__name {
   padding: 0px;
@@ -1968,9 +2002,11 @@ body {
 .payment__title {
   padding: 0px;
   margin: 0px;
+  margin-bottom: 35px;
   text-align: center;
   font-size: 30px;
   font-weight: 800;
+  line-height: 36px;
   color: #fff;
 }
 .payment__btn {
@@ -1984,6 +2020,7 @@ body {
   color: #fff;
   text-align: center;
   line-height: 71px;
+  cursor: pointer;
   border: 0px;
   border-radius: 100px;
   background-image: -moz-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
@@ -2004,7 +2041,8 @@ body {
   max-width: 330px;
   width: 100%;
   height: 57px;
-  margin-bottom: 30px;
+  padding: 0px 20px;
+  margin-bottom: 20px;
   border: none;
   border-radius: 5px;   
 }
@@ -2022,12 +2060,13 @@ body {
   height: 58px;
   border: 0px;
   border-radius: 5px;
+  padding: 0px 20px;
 }
 .payment__text {
   display: block;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 16px;
   font-weight: 300;
   color: #fff;
@@ -2037,6 +2076,7 @@ body {
   height: 58px;
   border: none;
   border-radius: 5px;
+  padding: 0px 20px;
 }
 .order__fieldset {
   padding: 0px;
@@ -2049,7 +2089,7 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -2123,9 +2163,11 @@ body {
 .order__total-time {
   padding: 0px;
   margin: 0px;
+  margin-bottom: 50px;
   font-size: 20px;
   font-weight: 800;
   color: #242424;
+  text-align: center;
 }
 .order__total-time span {
   color: #eb3333;
@@ -2154,6 +2196,14 @@ body {
 .order__info-box {
   display: none;
 }
+.basket__description-text {
+  padding: 0px 25px;
+  margin: 0px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #1c1c1c;
+}
 @media (min-width: 767px) {
   .order {
     padding: 0px;
@@ -2168,9 +2218,21 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .order__fieldset-inner {
+    justify-content: space-between;
+  }
+  .basket__description-text {
+    padding: 0px;
+    padding-right: 120px;
+    margin-bottom: 35px;
+  }
   .payment {
     box-shadow: 0px 5px 21px 0px rgba(1, 1, 1, 0.05);
     border-radius: 10px;
+  }
+  .order__total-time {
+    text-align: left;
+    margin: 0px;
   }
   .payment__title {
     text-align: left;
@@ -2184,7 +2246,7 @@ body {
     width: 330px;
   }
   .payment__wrapper {
-    padding: 30px 20px;
+    padding: 20px 20px;
   }
   .order__info-box {
     display: flex;
@@ -2194,6 +2256,7 @@ body {
   }
   .basket__description {
     padding: 0px 100px;
+    padding-bottom: 100px;
   }
   .basket__list {
     -webkit-flex-direction: row;

@@ -33,7 +33,7 @@ $(document).ready(function() {
     slidesToScroll: 1,
     responsive: [
     {
-        breakpoint: 1200,
+        breakpoint: 1170,
         settings: {
           infinite: true,
           slidesToShow: 1,

@@ -9,10 +9,33 @@
 <body>
 	<header class="page-header">
 		<div class="page-header__wrapper">
+			<div class="page-header__contact">
+				<a href="" class="page-header__contact-link">
+					8 800 555-35-35	
+				</a>
+				<p class="page-header__contact-text">10:00 - 21:00</p>
+			</div>
 			<a href="index.html" class="logo">
 				<img src="image/logo.png" width="173" height="75" alt="Логотип" class="logo__img">
 			</a>
+			<div class="page-header__basket">
+				<a href="basket.html" class="page-header__basket-link">
+					<p class="page-header__basket-text">250.43 Р</p>
+					<div class="page-header__basket-picture">
+						<img src="image/icon-basket.png" width="29" height="20" alt="Корзина">
+						<span class="page-header__basket-number">
+							1
+						</span>
+					</div>
+				</a>
+			</div>
 			<menu class="main-menu">
+				<a class="header-menu-mob__link header-menu-mob__item--humburger">
+	        <img src="image/icon-hamburger.png" width="30" height="20" alt="Гамбургер" class="header-menu-mob__img">
+	        <p class="header-menu-mob__text">
+	        	Меню
+	        </p>
+	      </a>
 				<ul class="main-menu__list">
 					<li class="main-menu__item">
 						<a href="" class="main-menu__link">
@@ -33,6 +56,14 @@
 						<a href="" class="main-menu__link">
 							Контакты	
 						</a>
+					</li>
+					<li class="main-menu__item main-menu__item--contact">
+						<a href="tel:8 800 555-35-35" class="main-menu__link main-menu__link--color">
+							8 800 555-35-35	
+						</a>
+						<p class="main__contact-text">
+							10:00 - 21:00
+						</p>
 					</li>
 				</ul>
 			</menu>
@@ -199,6 +230,9 @@
 				Создание сайта:<span>АТР-медиа</span>
 			</p>
 		</div>
-	</footer>	
+	</footer>
+	<script  src="jquery/jquery-3.0.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>	
 </body>
 </html>
