@@ -245,6 +245,66 @@
   }
   .left {
     position: absolute;
+    left: 480px;
+    z-index: 1;
+  }
+  .right {
+    width: 87px;
+    height: 87px;
+  }
+  .right {
+    position: absolute;
+    right: 480px;
+    z-index: 1;
+  }
+}
+@media (min-width: 1350px) {
+  .left {
+    width: 87px;
+    height: 87px;
+  }
+  .left {
+    position: absolute;
+    left: 570px;
+    z-index: 1;
+  }
+  .right {
+    width: 87px;
+    height: 87px;
+  }
+  .right {
+    position: absolute;
+    right: 570px;
+    z-index: 1;
+  }
+}
+@media (min-width: 1450px) {
+  .left {
+    width: 87px;
+    height: 87px;
+  }
+  .left {
+    position: absolute;
+    left: 600px;
+    z-index: 1;
+  }
+  .right {
+    width: 87px;
+    height: 87px;
+  }
+  .right {
+    position: absolute;
+    right: 600px;
+    z-index: 1;
+  }
+}
+@media (min-width: 1550px) {
+  .left {
+    width: 87px;
+    height: 87px;
+  }
+  .left {
+    position: absolute;
     left: 660px;
     z-index: 1;
   }

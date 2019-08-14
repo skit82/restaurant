@@ -828,7 +828,6 @@ body {
 
 .about-us {
   min-height: 888px;
-  max-width: 1600px;
   width: 100%;
   margin: 0px auto;
   background-image: url(../image/bg-about.jpg);
@@ -1082,6 +1081,8 @@ body {
   text-align: justify;
 }
 .feedback__slider {
+  max-width: 1600px;
+  margin: 0px auto;
   padding: 0px 15px;
 }
 @media (min-width: 767px) {
@@ -1100,7 +1101,6 @@ body {
     max-width: 768px;
   }
   .feedback {
-    max-width: 1600px;
     min-height: 789px;
     margin: 0 auto;
     background-position: center 0px;
