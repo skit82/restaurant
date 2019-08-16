@@ -2396,3 +2396,68 @@ body {
     width: 50px;
   }
 }
+
+/*Страница меню*/
+
+.viand__inner {
+  max-width: 1170px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px; 
+  margin: 0 auto;
+}
+.viand__title {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 800;
+  color: #242424;
+  text-align: center;
+}
+.viand__text {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 45px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #242424;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .viand__inner {
+    padding: 0px;
+  }
+  .viand__title {
+    font-size: 48px;
+  }
+  .catalog__list--viand {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .viand-item {
+    margin-right: 20px;
+  }
+  .viand-item:nth-child(4) {
+    margin-right: 0px;
+  }
+  .viand-item:nth-child(8) {
+    margin-right: 0px;
+  }
+  .viand-item:nth-child(12) {
+    margin-right: 0px;
+  }
+  .viand-item:nth-child(16) {
+    margin-right: 0px;
+  }
+}
