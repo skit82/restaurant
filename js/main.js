@@ -19,7 +19,7 @@ $(document).ready(function() {
     });
 
     $(function(){
-      $('.clikblock').click(function(){$('html,body').animate({scrollTop:$('.stopblock').offset().top}, 1200);});
+      $('.clikblock, clickmenu').click(function(){$('html,body').animate({scrollTop:$('.stopblock, .stopmenu').offset().top}, 1200);});
     });
 
   $('.feedback__slider').slick({
