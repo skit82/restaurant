@@ -18,8 +18,16 @@ $(document).ready(function() {
       }
     });
 
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+
+
     $(function(){
-      $('.clikblock, clickmenu').click(function(){$('html,body').animate({scrollTop:$('.stopblock, .stopmenu').offset().top}, 1200);});
+      $('.clikblock').click(function(){$('html,body').animate({scrollTop:$('.stopblock').offset().top}, 1200);});
     });
 
   $('.feedback__slider').slick({

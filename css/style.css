@@ -904,7 +904,7 @@ body {
   list-style: none;
 }
 .about-us__info-item {
-  width: 280px;
+  width: 270px;
   margin-bottom: 30px;
 }
 .about-us__info-title {
@@ -915,6 +915,10 @@ body {
   font-weight: 800;
   color: #fff;
 }
+.about-us__title-link {
+  text-decoration: none;
+  color: #fff;
+}
 .about-us__info-text {
   padding: 0px;
   margin: 0px;
@@ -922,7 +926,7 @@ body {
   line-height: 24px;
   font-weight: 300;
   color: #fff;
-  text-align: justify;
+  text-align: left;
 }
 .about-us__info-image {
   margin-bottom: 10px;
@@ -2298,6 +2302,8 @@ body {
     justify-content: space-between;
   }
   .basket__description-text {
+    font-size: 20px;
+    font-weight: 800;
     padding: 0px;
     padding-right: 120px;
     margin-bottom: 35px;

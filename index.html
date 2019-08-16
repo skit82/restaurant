@@ -9,7 +9,7 @@
 	<title>	</title>
 </head>
 <body>
-	<header id="scroll-top" class="page-header">
+	<header  class="page-header">
 		<div class="page-header__wrapper">
 			<div class="page-header__contact">
 				<a href="tel:8 800 555-35-35" class="page-header__contact-link">
@@ -38,9 +38,9 @@
 	        	Меню
 	        </p>
 	      </a>
-				<ul class="main-menu__list">
+				<ul id="menu" class="main-menu__list">
 					<li class="main-menu__item">
-						<a href="catalog.html" class="main-menu__link">
+						<a href="#ex1" class="main-menu__link">
 							Меню
 						</a>
 					</li>
@@ -49,8 +49,8 @@
 							Акции
 						</a>
 					</li>
-					<li class="main-menu__item clikblock">
-						<a href="#ex1" class="main-menu__link">
+					<li class="main-menu__item">
+						<a href="#ex2" class="main-menu__link">
 							О ресторане
 						</a>
 					</li>
@@ -78,14 +78,14 @@
 				При заказе доставки от 3х блюд
 			</p>
 			<div class="page-header__ref">
-				<a href="" class="page-header__link">
+				<a href="catalog.html" class="page-header__link">
 					Смотреть меню
 				</a>
 			</div>
 		</div>
 	</header>
 	<main>
-		<section class="catalog">
+		<section id="ex1" class="catalog">
 			<div class="catalog__inner">
 				<h2 class="catalog__title">
 					Меню
@@ -196,10 +196,11 @@
 					</ul>
 			</div>
 		</section>
-		<section id="ex1" class="about-us stopblock">
+		<section id="ex2" class="about-us">
 			<div class="about-us__wrraper">
 				<h2 class="about-us__title">
-					О нашем ресторане
+					<a href="promo.html" class="about-us__title-link">О нашем ресторане
+				</a>
 				</h2>
 				<p class="about-us__text">
 					Давайте познакомимся поближе
