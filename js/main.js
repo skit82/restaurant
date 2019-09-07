@@ -18,6 +18,13 @@ $(document).ready(function() {
       }
     });
 
+     $("#datepicker").datepicker({
+        showOn: "button",
+        buttonImage: "https://snipp.ru/demo/437/calendar.gif",
+        buttonImageOnly: true,
+        buttonText: "Выбрать дату"
+      });
+
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
