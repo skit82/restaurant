@@ -73,6 +73,49 @@ $(document).ready(function() {
     	]
   	});
 
+  	$('.banner__list').slick({
+    	dots: false,
+    	centerMode: "true",
+    	infinite: true,
+    	speed: 300,
+    	prevArrow: '<img class="left" src="image/icon-left.png">',
+    	nextArrow: '<img class="right" src="image/icon-right.png">',
+    	slidesToShow: 3,
+    	slidesToScroll: 1,
+    	responsive: [
+    	{
+        	breakpoint: 1170,
+        	settings: {
+          	infinite: true,
+          	slidesToShow: 1,
+          	slidesToScroll: 1,
+          	centerMode: true,
+          	infinite: true,
+          	dots: false
+        }
+      	},
+	      {
+	        breakpoint: 767,
+	        settings: {
+	          infinite: true,
+	          slidesToShow: 2,
+	          adaptiveHeight: true,
+	          centerMode: true,
+	          slidesToScroll: 1
+	        }
+	      },
+	      {
+	        breakpoint: 520,
+	        settings: {
+	          infinite: true,
+	          slidesToShow: 1,
+	          adaptiveHeight: true,
+	          slidesToScroll: 1
+	        }
+      	}
+    	]
+  	});
+
   	$(function(){
 			$("#datepicker").datepicker({
 			showOn: "button",

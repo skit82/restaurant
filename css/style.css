@@ -2269,9 +2269,20 @@ body {
   background-image: -ms-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
   box-shadow: 0px 16px 26px 0px rgba(235, 51, 51, 0.26);
 }
+.order__fieldset-item--time {
+  padding: 15px 110px;
+  font-size: 18px;
+  color: #1c1c1c;
+  cursor: pointer;
+}
 @media (min-width: 767px) {
   .order__link {
     width: 330px;
+  }
+  .order__fieldset-item--time {
+    padding: 15px 110px;
+    font-size: 18px;
+    color: #1c1c1c;
   }
   .order__info-icon {
     width: 121px;
@@ -2361,7 +2372,7 @@ body {
     border-radius: 10px;
   }
   .order__total-time {
-    text-align: left;
+    text-align: center;
     margin: 0px;
   }
   .payment__title {
@@ -2405,6 +2416,12 @@ body {
     border-radius: 10px;
      box-shadow: 0px 5px 21px 0px rgba(1, 1, 1, 0.05);
     padding: 0px 20px;
+  }
+  .order__fieldset-item--time {
+    padding: 15px 85px;
+    font-size: 18px;
+    color: #1c1c1c;
+    cursor: pointer;
   }
   .order__info-block {
     display: -webkit-flex;
