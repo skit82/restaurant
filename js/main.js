@@ -18,12 +18,12 @@ $(document).ready(function() {
       }
     });
 
-     $("#datepicker").datepicker({
-        showOn: "button",
-        buttonImage: "https://snipp.ru/demo/437/calendar.gif",
-        buttonImageOnly: true,
-        buttonText: "Выбрать дату"
-      });
+    $("#datepicker").datepicker({
+       showOn: "button",
+       buttonImage: "https://snipp.ru/demo/437/calendar.gif",
+       buttonImageOnly: true,
+       buttonText: "Выбрать дату"
+    });
 
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
@@ -37,46 +37,46 @@ $(document).ready(function() {
       $('.clikblock').click(function(){$('html,body').animate({scrollTop:$('.stopblock').offset().top}, 1200);});
     });
 
-  $('.feedback__slider').slick({
-    dots: false,
-    centerMode: "true",
-    infinite: true,
-    speed: 300,
-    prevArrow: '<img class="left" src="image/icon-left.png">',
-    nextArrow: '<img class="right" src="image/icon-right.png">',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [
-    {
-        breakpoint: 1170,
-        settings: {
-          infinite: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: true,
-          infinite: true,
-          dots: false
+  	$('.feedback__slider').slick({
+    	dots: false,
+    	centerMode: "true",
+    	infinite: true,
+    	speed: 300,
+    	prevArrow: '<img class="left" src="image/icon-left.png">',
+    	nextArrow: '<img class="right" src="image/icon-right.png">',
+    	slidesToShow: 1,
+    	slidesToScroll: 1,
+    	responsive: [
+    	{
+        	breakpoint: 1170,
+        	settings: {
+          	infinite: true,
+          	slidesToShow: 1,
+          	slidesToScroll: 1,
+          	centerMode: true,
+          	infinite: true,
+          	dots: false
         }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          infinite: true,
-          slidesToShow: 1,
-          adaptiveHeight: true,
-          centerMode: true,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 520,
-        settings: {
-          infinite: true,
-          slidesToShow: 1,
-          adaptiveHeight: true,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
+      	},
+	      {
+	        breakpoint: 767,
+	        settings: {
+	          infinite: true,
+	          slidesToShow: 1,
+	          adaptiveHeight: true,
+	          centerMode: true,
+	          slidesToScroll: 1
+	        }
+	      },
+	      {
+	        breakpoint: 520,
+	        settings: {
+	          infinite: true,
+	          slidesToShow: 1,
+	          adaptiveHeight: true,
+	          slidesToScroll: 1
+	        }
+      	}
+    	]
+  	});
 });
