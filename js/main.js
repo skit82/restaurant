@@ -73,12 +73,12 @@ $(document).ready(function() {
     	]
   	});
 
-  	$(function() {
-  		("#datepicker").datepicker({
-       showOn: "button",
-       buttonImage: "https://snipp.ru/demo/437/calendar.gif",
-       buttonImageOnly: true,
-       buttonText: "Выбрать дату"
-  		})
-    });
+  	$(function(){
+			$("#datepicker").datepicker({
+			showOn: "button",
+			buttonImage: "https://snipp.ru/demo/437/calendar.gif",
+			buttonImageOnly: true,
+			buttonText: "Выбрать дату"
+			});
+		});
 });
