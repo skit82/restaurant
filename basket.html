@@ -109,11 +109,13 @@
 												Ваш заказ
 											</p>
 											<p class="order__info-text order__info-text--number">
-												Количество
+												Кол-во
 											</p>
 											<p class="order__info-text order__info-text--price">
 												Цена
 											</p>
+											<p class="order__info-text order__info-text--del">
+											</p>
 										</div>
 										<div class="order__info-block">
 											<div class="order__info-product">
@@ -133,6 +135,9 @@
 											<div class="order__info-price">
 												<p>70 Р</p>
 											</div>
+											<div class="order__info-del del">
+												<img src="image/icon-del.png" width="19" height="20" alt="Удаление">
+											</div>
 										</div>
 										<div class="order__info-block">
 											<div class="order__info-product">
@@ -151,6 +156,9 @@
 											</div>
 											<div class="order__info-price">
 												<p>70 Р</p>
+											</div>
+											<div class="order__info-del del">
+												<img src="image/icon-del.png" width="19" height="20" alt="Удаление">
 											</div>
 										</div>
 									</div>
@@ -333,6 +341,27 @@
 			</p>
 		</div>
 	</footer>
+	<div class="del-fade">
+    			<div class="popup-del">
+        		<a class="popup-close" href="#">
+        			<img src="image/icon-clouse.png" width="13" height="13" alt="Закрыть">
+        		</a>
+        		<form action="" class="form-del">
+        			<h2 class="form-del__title">
+        				Удалить блюдо из корзины?
+        			</h2>
+        			<div class="form-del__wrapper">
+	        			<button class="form-del__cancel">
+	        				Да
+	        			</button>
+	        			<button class="form-del__remove">
+	        				Нет
+	        			</button>
+	        		</div>
+        			</div>
+        		</form>
+    		</div>        
+			</div>
 	<script  src="jquery/jquery-3.0.0.min.js"></script>
 	<script  src="jquery/jquery-ui.min.js"></script>
 	<script  src="js/datepicker-ru.js"></script>

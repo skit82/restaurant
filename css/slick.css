@@ -34,7 +34,50 @@
     overflow: hidden;
 
     margin: 0;
-    padding: 0;
+    padding:0;
+}
+@media (min-width: 1200px) {
+  .slick-list {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding:0 20% 0 0;
+  }
+
+  .slick-list .banner__list {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding:0;
+  }
+/* the slides */
+  .slick-slide {
+    margin-left:17px;
+  }
+
+   /*the parent */
+  .slick-list {
+    margin-left:-17px;
+  }
+  /* the slides */
+  .slick-slide.banner__item {
+    margin-left:0px;
+  }
+
+   /*the parent */
+  .slick-list.banner__item {
+    margin-left:0px;
+  }
+  .slick-center {
+  background-color: #8cc63f;
+  transform: scale(1.3);
+}
 }
 .slick-list:focus
 {
@@ -67,6 +110,9 @@
     margin-right: auto;
     /*padding-bottom: 25px;*/
 }
+.slick-track.feedback {
+  padding-bottom: 25px;
+}
 .slick-track {
   position: relative;
     top: 0;
@@ -75,7 +121,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 25px;
+    /*padding-bottom: 25px;*/
+}
+.slick-track.banner__wrapper {
+  padding-bottom: 0px;
 }
 .slick-track:before,
 .slick-track:after
@@ -216,6 +265,26 @@
   bottom: -60px;
   z-index: 1;
 }
+.left {
+  width: 87px;
+  height: 87px;
+}
+.left-arrow {
+  position: absolute;
+  left: 90px;
+  bottom: -30px;
+  z-index: 1;
+}
+.right-arrow {
+  width: 87px;
+  height: 87px;
+}
+.right-arrow {
+  position: absolute;
+  right: 90px;
+  bottom: -30px;
+  z-index: 1;
+}
 @media (min-width: 768px) {
   .left {
     width: 87px;
@@ -224,7 +293,7 @@
   .left {
     position: absolute;
     left: 290px;
-    bottom: -30px;
+    /*bottom: -30px;*/
     z-index: 1;
   }
   .right {
@@ -232,6 +301,26 @@
     height: 87px;
   }
   .right {
+    position: absolute;
+    right: 290px;
+    /*bottom: -30px;*/
+    z-index: 1;
+  }
+  .left-arrow {
+    width: 87px;
+    height: 87px;
+  }
+  .left-arrow {
+    position: absolute;
+    left: 290px;
+    bottom: -30px;
+    z-index: 1;
+  }
+  .right-arrow {
+    width: 87px;
+    height: 87px;
+  }
+  .right-arrow {
     position: absolute;
     right: 290px;
     bottom: -30px;
@@ -257,6 +346,24 @@
     right: 480px;
     z-index: 1;
   }
+  .left-arrow {
+    width: 87px;
+    height: 87px;
+  }
+  .left-arrow {
+    position: absolute;
+    left: 480px;
+    z-index: 1;
+  }
+  .right-arrow {
+    width: 87px;
+    height: 87px;
+  }
+  .right-arrow {
+    position: absolute;
+    right: 480px;
+    z-index: 1;
+  }
 }
 @media (min-width: 1350px) {
   .left {
@@ -273,6 +380,24 @@
     height: 87px;
   }
   .right {
+    position: absolute;
+    right: 570px;
+    z-index: 1;
+  }
+  .left-arrow {
+    width: 87px;
+    height: 87px;
+  }
+  .left-arrow {
+    position: absolute;
+    left: 570px;
+    z-index: 1;
+  }
+  .right-arrow {
+    width: 87px;
+    height: 87px;
+  }
+  .right-arrow {
     position: absolute;
     right: 570px;
     z-index: 1;
@@ -297,6 +422,24 @@
     right: 600px;
     z-index: 1;
   }
+  .left-arrow {
+    width: 87px;
+    height: 87px;
+  }
+  .left-arrow {
+    position: absolute;
+    left: 600px;
+    z-index: 1;
+  }
+  .right-arrow {
+    width: 87px;
+    height: 87px;
+  }
+  .right-arrow {
+    position: absolute;
+    right: 600px;
+    z-index: 1;
+  }
 }
 @media (min-width: 1550px) {
   .left {
@@ -317,22 +460,40 @@
     right: 660px;
     z-index: 1;
   }
+  .left-arrow {
+    width: 87px;
+    height: 87px;
+  }
+  .left-arrow {
+    position: absolute;
+    left: 660px;
+    z-index: 1;
+  }
+  .right-arrow {
+    width: 87px;
+    height: 87px;
+  }
+  .right-arrow {
+    position: absolute;
+    right: 660px;
+    z-index: 1;
+  }
 }
-.left-arrow {
-  position: absolute;
-  left: -15px;
-  top: 112px;
-  z-index: 1;
-  opacity: 0.5;
-}
-.right-arrow {
-  position: absolute;
-  right: -15px;
-  top: 112px;
-  z-index: 1;
-  opacity: 0.5;
-}
-.slick-slider:hover .left-arrow,
-.slick-slider:hover .right-arrow {
-  opacity: 1;
-}
+/*.left-arrow {*/
+  /*position: absolute;*/
+  /*/left: -15px;*/
+  /*top: 112px;*/
+  /*z-index: 1;*/
+  /*opacity: 0.5;*/
+/*}*/
+/*.right-arrow {*/
+  /*position: absolute;*/
+  /*right: -15px;*/
+  /*top: 112px;*/
+  /*z-index: 1;*/
+  /*opacity: 0.5;*/
+/*}*/
+/*.slick-slider:hover .left-arrow,*/
+/*.slick-slider:hover .right-arrow {*/
+  /*opacity: 1;*/
+/*}*/
