@@ -1052,7 +1052,7 @@ body {
   /*max-width: 768px;*/
   max-width: 310px;
   width: 100%;
-  min-height: 573px;
+  min-height: 510px;
   margin: 0 auto;
   border-radius: 10px;
   border: 1px solid rgb(243, 242, 242);
@@ -1075,7 +1075,7 @@ body {
   display: block;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   font-size: 18px;
   font-weight: 800;
   color: #242424;
@@ -2138,6 +2138,7 @@ body {
   font-weight: 800;
 }
 .order__title {
+  width: 230px;
   padding: 0px;
   margin: 0px;
   margin-left: 15px;
@@ -2245,14 +2246,23 @@ body {
 }
 .order__info-block {
   display: flex;
-  align-self: center;
-  justify-content: center;
+  width: 300px;
+  flex-direction: column;
+  margin: 0 auto;
 }
 .order__info-product {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 210px;
+  width: 300px;
+  margin: 0 auto;
+}
+.order__info-list {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 .order__info-number {
   align-self: center;
@@ -2299,7 +2309,7 @@ body {
   display: block;
   vertical-align: middle;
   cursor: pointer;
-  margin-top: 24px;
+  /*margin-top: 24px;*/
 }
 .del-fade {
     display: none;
@@ -2502,6 +2512,7 @@ body {
     height: 121px;
   }
   .order__title {
+    width: 240px;
    font-size: 20px;
    margin-bottom: 10px; 
   }
@@ -2531,13 +2542,20 @@ body {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 650px;
+    margin: 0px;
     padding: 31px 0px;
     border-bottom: 1px solid #dce4fb;
   }
   .order__info-product {
-    width: 350px;
+    width: 430px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -2591,6 +2609,9 @@ body {
     top: 45%;
     left: 45%;
   }
+  .order__info-list {
+    width: 245px;
+  } 
   .order__fieldset--filter {
     padding-bottom: 75px;
   }
@@ -2669,6 +2690,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 595px;
     padding: 31px 0px;
     border-bottom: 1px solid #dce4fb;
   }
@@ -2694,11 +2716,14 @@ body {
     align-items: center;
   }
   .order__info-number {
-    width: 70px;
+    width: 100px;
     margin: 0px;
   }
+  .order__title {
+    width: 214px;
+  }
   .order__info-price {
-    width: 80px;
+    width: 100px;
     text-align: center;
   }
   .order__info-text--del {
