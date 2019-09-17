@@ -55,7 +55,7 @@ $(document).ready(function() {
 
   	$('.feedback__slider').slick({
       dots: false,
-      centerMode: "true",
+      // centerMode: "true",
       infinite: true,
       speed: 300,
       prevArrow: '<img class="left" src="image/icon-left.png">',
@@ -67,10 +67,11 @@ $(document).ready(function() {
           breakpoint: 1170,
           settings: {
             slidesToShow: 1,
-            centerPadding: "200px",
+            centerPadding: "0px",
             slidesToScroll: 1,
+            adaptiveHeight: true,
             centerMode: true,
-            infinite: false,
+            infinite: true,
             variableWidth: false,
             dots: false
         }

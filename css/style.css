@@ -1760,6 +1760,10 @@ body {
     width: 33%;
     margin-right: 20px;
   }
+  .banner__item {
+    max-width: 570px;
+    width: 100%%;
+  }
   .card__list {
     justify-content: flex-start;
   }
