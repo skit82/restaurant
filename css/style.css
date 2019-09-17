@@ -1017,7 +1017,7 @@ body {
 }
 .feedback {
   width: 100%;
-  min-height: 839px;
+  min-height: 770px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center 0px;
@@ -1097,6 +1097,9 @@ body {
 @media (min-width: 767px) {
   .feedback__wrraper {
     max-width: 330px;
+  }
+  .feedback {
+    min-height: 839px;
   }
   .feedback__text {
     margin-bottom: 50px;
@@ -2126,6 +2129,7 @@ body {
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .order__info-box {
   display: -webkit-flex;
@@ -2147,9 +2151,9 @@ body {
   margin: 0px;
   margin-left: 15px;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 800;
-  text-align: left;
+  text-align: right;
 }
 .order__info-inner p {
   padding: 0px;
@@ -2159,7 +2163,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   color: #959393;
-  text-align: left;
+  text-align: right;
 }
 .order__total {
   display: -webkit-flex;
@@ -2207,13 +2211,15 @@ body {
   color: #eb3333;
 }
 .order__info-number p {
-  font-size: 18px;
+  margin: 0px;
+  font-size: 28px;
   font-weight: 300;
   color: #242424;
   text-align: center;
 }
 .order__info-price p {
-  font-size: 22px;
+  margin: 0px;
+  font-size: 38px;
   text-align: center;
   font-weight: 800;
   color: #eb3333;
@@ -2245,14 +2251,16 @@ body {
 }
 .order__info-icon {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 78px;
+  height: 78px;
 }
 .order__info-block {
   display: flex;
   width: 300px;
   flex-direction: column;
   margin: 0 auto;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dce4fb;
 }
 .order__info-product {
   display: flex;
@@ -2260,6 +2268,7 @@ body {
   align-items: center;
   width: 300px;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 .order__info-list {
   display: flex;
@@ -2267,6 +2276,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 .order__info-number {
   align-self: center;
@@ -2337,7 +2347,7 @@ body {
   }
   .popup-del {
     position: fixed;
-    top: 34%;
+    top: 25%;
     left: 53%;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -2406,9 +2416,30 @@ body {
     background-color: rgb(255, 255, 255);
     outline: none;
   }
+  .order__info-title {
+    margin: 0px;
+    margin-bottom: 50px;
+    padding: 0px;
+    font-size: 38px;
+    font-weight: 800;
+    color: #1c1c1c;
+    text-align: center;
+  }
 @media (min-width: 767px) {
   .del-fade {
     display: none;
+  }
+  .order__info-title {
+    display: none;
+  }
+  .order__title {
+    text-align: left;
+  }
+  .order__info-inner p {
+    text-align: left;
+  }
+  .order__info-list {
+    margin-bottom: 0px;
   }
   .popup-close img {
     position: absolute;
@@ -2567,6 +2598,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0px;
   }
   .order__info-text--buy {
     width: 350px;
@@ -2725,6 +2757,10 @@ body {
   }
   .order__title {
     width: 214px;
+    text-align: left;
+  }
+  .order__info-inner p {
+    text-align: left;
   }
   .order__info-price {
     width: 100px;
