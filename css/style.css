@@ -432,6 +432,15 @@ body {
   background-image: -ms-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
   box-shadow: 0px 16px 26px 0px rgba(235, 51, 51, 0.26);
 }
+.page-header__link:hover {
+  background-image: -moz-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%);
+  background-image: -webkit-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%);
+  background-image: -ms-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%); 
+  }
+  .page-header__link:active {
+  background-image: -webkit-linear-gradient( 140deg, rgb(96,31,31) 0%, rgb(210,51,51) 100%);
+  background-image: -ms-linear-gradient( 140deg, rgb(96,31,31) 0%, rgb(210,51,51) 100%);
+  }
 @media (min-width: 1170px) {
   .page-header__title {
     padding: 0px 160px;
@@ -1585,10 +1594,19 @@ body {
 }
 .card__item {
   max-width: 370px;
+  position: relative;
   width: 100%;
   background-color: #fff;
   margin-bottom: 20px;
   border-radius: 10px 10px 10px 10px;
+}
+.card__action {
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #eb3333;
 }
 .card__list {
   padding: 0px;
@@ -1650,6 +1668,8 @@ body {
   color: #eb3333;
 }
 .card__button-number {
+  display: flex;
+  align-items: center;
   padding: 0px;
   margin: 0px;
   font-size: 28px;
@@ -1657,12 +1677,20 @@ body {
   color: #242424;
 }
 .card__button-number span {
+  width: 30px;
+  height: 30px;
   padding: 0px;
   margin: 0px;
   font-size: 28px;
+  line-height: 31px;
+  text-align: center;
   font-weight: 300;
-  color: #242424;
+  color: #ffffff;
   margin: 10px;
+  background-image: -moz-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
+  background-image: -webkit-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
+  background-image: -ms-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
+  border-radius: 100px;
 }
 .card__inner {
   padding: 0px 15px;
@@ -1701,6 +1729,15 @@ body {
   background-image: -ms-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
   box-shadow: 0px 16px 26px 0px rgba(235, 51, 51, 0.26);
 }
+.card__ref:hover {
+  background-image: -moz-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%);
+  background-image: -webkit-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%);
+  background-image: -ms-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%); 
+  }
+  .card__ref:active {
+  background-image: -webkit-linear-gradient( 140deg, rgb(96,31,31) 0%, rgb(210,51,51) 100%);
+  background-image: -ms-linear-gradient( 140deg, rgb(96,31,31) 0%, rgb(210,51,51) 100%);
+  }
 .card__definition-text {
   padding: 0px;
   padding-bottom: 25px;
@@ -1782,16 +1819,16 @@ body {
     padding-bottom: 30px;
   }
   .card__button-number {
-    font-size: 18px;
+    font-size: 28px;
   }
   .card__button-number span {
-    font-size: 18px;
+    font-size: 28px;
   }
   .card__ref {
     display: none;
   }
   .card__button {
-    width: 140px;
+    width: 175px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -1811,11 +1848,20 @@ body {
     background-image: -ms-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
     box-shadow: 0px 8px 26px 0px rgba(235, 51, 51, 0.26);
   }
+  .card__pisture:hover {
+    background-image: -moz-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%);
+    background-image: -webkit-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%);
+    background-image: -ms-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%); 
+  }
+  .card__pisture:active {
+    background-image: -webkit-linear-gradient( 140deg, rgb(96,31,31) 0%, rgb(210,51,51) 100%);
+    background-image: -ms-linear-gradient( 140deg, rgb(96,31,31) 0%, rgb(210,51,51) 100%);
+  }
   .card__button-img {
     display: block;
     width: 29px;
     height: 20px;
-    margin: 14px;
+    margin: 14px auto;
   }
 }
 /*Страница Контакты*/
@@ -2310,6 +2356,15 @@ body {
   background-image: -ms-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
   box-shadow: 0px 16px 26px 0px rgba(235, 51, 51, 0.26);
 }
+.order__link:hover {
+  background-image: -moz-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%);
+  background-image: -webkit-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%);
+  background-image: -ms-linear-gradient( 140deg, rgb(153,31,31) 0%, rgb(220,51,51) 100%); 
+  }
+  .order__link:active {
+  background-image: -webkit-linear-gradient( 140deg, rgb(96,31,31) 0%, rgb(210,51,51) 100%);
+  background-image: -ms-linear-gradient( 140deg, rgb(96,31,31) 0%, rgb(210,51,51) 100%);
+  }
 .order__fieldset-item--time {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -2434,6 +2489,9 @@ body {
   }
   .order__title {
     text-align: left;
+  }
+  .order__info-price p {
+    font-size: 30px;
   }
   .order__info-inner p {
     text-align: left;
